@@ -22,21 +22,21 @@ if(isset(($_POST['rtwcpiglw_submit'])))
 			<tr>
 				<th class="descr"><?php esc_html_e( 'Enable Packing Slip', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' ); ?></th>
 				<td class="descr_2">
-					<input type="checkbox" name="rtwcpiglw_pkngslp_basic_stng_opt[rtwcpiglw_enable_pkng_slp]" value="1" <?php echo isset( $rtwcpiglw_get_setting['rtwcpiglw_enable_pkng_slp'] ) && $rtwcpiglw_get_setting['rtwcpiglw_enable_pkng_slp'] == 1 ? esc_html('checked="checked"') : ''; ?> />
+					<input type="checkbox" name="rtwcpiglw_pkngslp_basic_stng_opt[rtwcpiglw_enable_pkng_slp]" value="1" <?php checked( $rtwcpiglw_get_setting['rtwcpiglw_enable_pkng_slp'], 1 ); ?> />
 					<div class="descr"><?php esc_html_e( 'Check it if you want generate packing slip for orders.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' );?></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="descr"><?php esc_html_e( 'Download Packing Slip', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' ); ?></th>
 				<td class="descr_2">
-					<input type="checkbox" name="rtwcpiglw_pkngslp_basic_stng_opt[rtwcpiglw_download_pkng_slp]" value="1" <?php echo isset( $rtwcpiglw_get_setting['rtwcpiglw_download_pkng_slp'] ) && $rtwcpiglw_get_setting['rtwcpiglw_download_pkng_slp'] == 1 ? esc_html('checked="checked"') : ''; ?> />
+					<input type="checkbox" name="rtwcpiglw_pkngslp_basic_stng_opt[rtwcpiglw_download_pkng_slp]" value="1" <?php checked( $rtwcpiglw_get_setting['rtwcpiglw_download_pkng_slp'], 1 ); ?> />
 					<div class="descr"><?php esc_html_e( 'Check it if you want to download packing slip of an order from Order List Page', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' );?></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="descr"><?php esc_html_e( 'Rtl Support', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' ); ?></th>
 				<td class="descr_2">
-					<input type="checkbox" name="rtwcpiglw_pkngslp_basic_stng_opt[rtwcpiglw_pkng_slp_page_no]" value="1" <?php echo isset( $rtwcpiglw_get_setting['rtwcpiglw_pkng_slp_page_no'] ) && $rtwcpiglw_get_setting['rtwcpiglw_pkng_slp_page_no'] == 1 ? esc_html('checked="checked"') : ''; ?> />
+					<input type="checkbox" name="rtwcpiglw_pkngslp_basic_stng_opt[rtwcpiglw_pkng_slp_page_no]" value="1" <?php checked( $rtwcpiglw_get_setting['rtwcpiglw_pkng_slp_page_no'], 1 ); ?> />
 					<div class="descr"><?php esc_html_e( 'Check it if you want generate packing slip in Arabic or languages which start from right align.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' );?></div>
 				</td>
 			</tr>

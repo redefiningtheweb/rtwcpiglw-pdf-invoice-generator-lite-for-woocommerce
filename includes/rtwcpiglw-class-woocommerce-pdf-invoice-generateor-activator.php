@@ -25,5 +25,9 @@ class rtwcpiglw_Woocommerce_Pdf_Invoice_Generator_Activator {
  * Long Description.
  *
  * @since    1.0.0
+ * 
  */
+    public static function rtwcpiglw_activate() {
+
+    }
 }

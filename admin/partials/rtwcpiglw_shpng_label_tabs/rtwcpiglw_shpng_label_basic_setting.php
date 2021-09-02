@@ -20,28 +20,28 @@ if(isset(($_POST['rtwcpiglw_submit'])))
 			<tr>
 				<th class="descr"><?php esc_html_e( 'Enable Shipping Label', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' ); ?></th>
 				<td class="descr_2">
-					<input type="checkbox" name="rtwcpiglw_shipng_label_stng_opt[rtwcpiglw_enable_shpng_lbl]" value="1" <?php echo isset( $rtwcpiglw_get_setting['rtwcpiglw_enable_shpng_lbl'] ) && $rtwcpiglw_get_setting['rtwcpiglw_enable_shpng_lbl'] == 1 ? esc_html('checked="checked"') : ''; ?> />
+					<input type="checkbox" name="rtwcpiglw_shipng_label_stng_opt[rtwcpiglw_enable_shpng_lbl]" value="1" <?php checked( $rtwcpiglw_get_setting['rtwcpiglw_enable_shpng_lbl'], 1 ); ?> />
 					<div class="descr"><?php esc_html_e( 'Check it if you want generate shipping label for orders.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' );?></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="descr"><?php esc_html_e( 'Download Shipping Label', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' ); ?></th>
 				<td class="descr_2">
-					<input type="checkbox" name="rtwcpiglw_shipng_label_stng_opt[rtwcpiglw_download_shpng_lbl]" value="1" <?php echo isset( $rtwcpiglw_get_setting['rtwcpiglw_download_shpng_lbl'] ) && $rtwcpiglw_get_setting['rtwcpiglw_download_shpng_lbl'] == 1 ? esc_html('checked="checked"') : ''; ?> />
+					<input type="checkbox" name="rtwcpiglw_shipng_label_stng_opt[rtwcpiglw_download_shpng_lbl]" value="1" <?php checked( $rtwcpiglw_get_setting['rtwcpiglw_download_shpng_lbl'], 1 ); ?> />
 					<div class="descr"><?php esc_html_e( 'Check it if you want to download shipping label of an order from Order List Page', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' );?></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="descr"><?php esc_html_e( 'Rtl Support', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' ); ?></th>
 				<td class="descr_2">
-					<input type="checkbox" name="rtwcpiglw_shipng_label_stng_opt[rtwcpiglw_shpng_lbl_rtl]" value="1" <?php echo isset( $rtwcpiglw_get_setting['rtwcpiglw_shpng_lbl_rtl'] ) && $rtwcpiglw_get_setting['rtwcpiglw_shpng_lbl_rtl'] == 1 ? esc_html('checked="checked"') : ''; ?> />
+					<input type="checkbox" name="rtwcpiglw_shipng_label_stng_opt[rtwcpiglw_shpng_lbl_rtl]" value="1" <?php checked( $rtwcpiglw_get_setting['rtwcpiglw_shpng_lbl_rtl'], 1 ); ?> />
 					<div class="descr"><?php esc_html_e( 'Check it if you want generate packing slip in Arabic or languages which start from right align.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' );?></div>
 				</td>
 			</tr>
 			<tr>
 				<th class="descr"><span class="rtwcpiglw_pro_image"><img src="<?php echo esc_url( RTWCPIGLW_URL.'assets/pro.png' ); ?>" alt="pro_feature"></span><span class="rtwcpiglw_pro_text"><?php esc_html_e( 'Hide Page No.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce' ); ?></span></th>
 				<td class="descr_2">
-					<input type="checkbox" value="1" <?php echo isset( $rtwcpiglw_get_setting['rtwcpiglw_shpng_lbl_page_no'] ) && $rtwcpiglw_get_setting['rtwcpiglw_shpng_lbl_page_no'] == 1 ? esc_html('checked="checked"') : ''; ?> />
+					<input type="checkbox" value="1" />
 					<div class="rtwcpiglw_pro_descr"><?php esc_html_e('This Feature Is Available in PRO.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce');?></div>
 				</td>
 			</tr>

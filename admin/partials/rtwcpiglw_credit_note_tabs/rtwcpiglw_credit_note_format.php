@@ -356,7 +356,7 @@
 									<ul>
 										<?php 
 										foreach ($shortcode_array as $short_code => $code) {
-											echo '<li><strong>['.$code.']</strong></li>';
+											echo '<li><strong>['.esc_html($code).']</strong></li>';
 										}
 										?>
 									</ul>

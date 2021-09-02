@@ -38,7 +38,7 @@ $rtwcpiglw_wtrmrk_img_pos = get_option('rtwcpiglw_watermark_img_pos');
 		<td class="descr_2">
 			<input type="checkbox" id="rtwwpcfp_wtrmrk"
 			name="rtwcpiglw_watermark_setting_opt[rtwcpiglw_enable_text_watermark]" value='1'
-			<?php if(isset($rtwcpiglw_get_setting['rtwcpiglw_enable_text_watermark'])) { echo esc_html('checked = "checked"'); } ?> />
+			<?php checked( $rtwcpiglw_get_setting['rtwcpiglw_enable_text_watermark'], 1 ); ?> />
 			<div class="descr"><?php esc_html_e('Check it if you want to show Watermark text.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce');?></div>
 		</td>
 	</tr>
@@ -87,7 +87,7 @@ $rtwcpiglw_wtrmrk_img_pos = get_option('rtwcpiglw_watermark_img_pos');
 	<td class="descr_2">
 		<input type="checkbox" id="rtwwpcfp_wtrmrk"
 		name="rtwcpiglw_watermark_setting_opt[rtwcpiglw_enable_image_watermark]" value='1'
-		<?php if(isset($rtwcpiglw_get_setting['rtwcpiglw_enable_image_watermark'])) { echo esc_html('checked = "checked"'); } ?> />
+		<?php  checked( $rtwcpiglw_get_setting['rtwcpiglw_enable_image_watermark'], 1 ); ?> />
 		<div class="descr"><?php esc_html_e('Check it if you want to show Watermark image.', 'rtwcpiglw-pdf-invoice-generator-lite-for-woocommerce');?></div>
 	</td>
 </tr>
